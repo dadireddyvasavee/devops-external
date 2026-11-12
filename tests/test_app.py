@@ -41,7 +41,3 @@ def test_home_uses_explicit_message():
     response = client.get("/")
 
     assert response.get_json() == {"message": "Custom message"}
-
-
-def test_temporary_failure_for_ci_log_capture():
-    assert False, "Intentional temporary failure to capture CI logs"
